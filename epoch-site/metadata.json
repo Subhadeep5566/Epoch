@@ -1,0 +1,6 @@
+{
+  "name": "EPOCH — The Human Story",
+  "description": "An immersive digital archive documenting the complete history of human civilization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

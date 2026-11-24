@@ -1,0 +1,11 @@
+{
+  "name": "epoch-root",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "build": "npm --prefix epoch-site run build",
+    "dev": "npm --prefix epoch-site run dev",
+    "lint": "npm --prefix epoch-site run lint",
+    "preview": "npm --prefix epoch-site run preview"
+  }
+}

@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing and coverage
+coverage/
+
+# Build and production outputs
+dist/
+build/
+target/
+*.jar
+*.war
+
+# Large local media / raw frames / zip backups
+*.zip
+frames/
+test_screens/
+capture_test.cjs
+debug_scroll.cjs
+test_suite_capture.cjs
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Retain example envs
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.aistudio/
+
+# Vercel
+.vercel/
+
+.vercel

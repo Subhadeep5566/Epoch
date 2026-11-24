@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: #090A08;
+    color: #F3F4F6;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-book-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-book-sans {
+  font-family: 'Lora', serif;
+}
+
+.bg-parchment {
+  background-color: #FBF9F5;
+  color: #1F201E;
+}
+
+.text-charcoal {
+  color: #1F201E;
+}
+
+.text-antique-gold {
+  color: #9E7B38;
+}
+
+.border-parchment-border {
+  border-color: rgba(31, 32, 30, 0.15);
+}
+
+/* Custom selection */
+::selection {
+  background-color: #D7FF00;
+  color: #090A08;
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Pulse animation */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.96);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Subtle archival film grain overlay */
+.archival-grain {
+  background-image: radial-gradient(rgba(215, 255, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252822;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D7FF00;
+}
